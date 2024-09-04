@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
-    background-image: url(assets/imagens/110.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-
     font-family: "Poppins", system-ui;
     overflow-x: hidden;
 
@@ -18,12 +8,19 @@ body{
     padding: 0;
 } 
 
+
 /* Sessão Principal*/
 .section-main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     color: #FFFFFF;
+
+    background-image: url(assets/imagens/110.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .section-main h1{
@@ -89,14 +86,79 @@ body{
 }
 
 
+/* Sessão de Skills */
 
+.section-skills{
+    background: -webkit-linear-gradient(179deg, #000000,#0a0a0a,#040233);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(179deg, #000000,#0a0a0a,#040233);                                                                                    
+    height: 100vh;
+}
+
+/* Sessão Roadmap */
+.section-roadmap{
+    background-image: url(assets/imagens/113.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    position: relative;
+}
+
+.skills-title{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background-color: #ff7300;
+}
+
+.skills-title h2{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container-skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    gap: 20px;
+}
+
+.card-skils{
+    width: 230px;
+    height: 150px;
+    background-color: rgba(69, 71, 75, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-skils h3{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-skils ion-icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #5900ff;
+    font-size: 40px;
+}
+
+/* Rodapé */
 footer {
     backdrop-filter: blur(7px);
     color: #45474B;
     text-align: center; 
     padding: 0; 
     width: 100%; 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     font-size: 1rem;
 }
