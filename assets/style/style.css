@@ -90,17 +90,8 @@ body{
 
 .section-skills{
     background: -webkit-linear-gradient(179deg, #000000,#0a0a0a,#040233);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(179deg, #000000,#0a0a0a,#040233);                                                                                    
-    height: 100vh;
-}
-
-/* Sessão Roadmap */
-.section-roadmap{
-    background-image: url(assets/imagens/113.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 100vh;
-    position: relative;
+    height: 180vh;
+    padding: 0 90px;
 }
 
 .skills-title{
@@ -135,6 +126,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 10px;
 }
 
 .card-skils h3{
@@ -151,6 +143,128 @@ body{
     font-size: 40px;
 }
 
+.card-skils button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    border: 0;
+    padding: 8px;
+    background-color: #ff7300;
+    color: #000000;
+    font-size: 26px;
+    border-radius: 50%;
+}
+/* Sessão do Radmap*/
+
+.roadmap-carees{
+    margin: 40px 60px;
+}
+
+.roadmap-carees h4{
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.roadmap-carees h4 span{
+    color: #45474B;
+}
+
+/* Título da Sessão Roadmap */
+
+.title-carees{
+    text-align: center;
+    padding: 9px 6px;
+    width: 300px;
+    background-color: #5900ff;
+}
+
+.title-carees h2{
+    margin: 0;
+}
+
+/* Input de Pesquisa de Carreira*/
+.search-carees{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-carees input{
+    width: 200px;
+    height: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.search-carees ::placeholder{
+    color: #181818;
+    font-size: 15px;
+}
+
+.search-carees button{
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    background: #ff7300;
+}
+
+/*Campo de busca de Carreira*/
+.cards-carees{
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.line{
+    border: 1px solid #45474B;
+}
+
+.card-carees{
+    width: 250px;
+    background-color: rgba(69, 71, 75, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-carees h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card-carees button{
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 1px solid #ff7300;
+    background: none;
+}
+
+.card-carees button a{
+    color: #ff7300;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+
+
+/* Sessão Roadmap */
+.section-roadmap{
+    background-image: url(assets/imagens/113.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+    position: relative;
+}
 /* Rodapé */
 footer {
     backdrop-filter: blur(7px);
