@@ -6,6 +6,7 @@ body{
 
     margin: 0;
     padding: 0;
+    position: relative;
 } 
 
 
@@ -64,13 +65,14 @@ body{
 
 .section-skills{
     background: -webkit-linear-gradient(179deg, #000000,#0a0a0a,#040233);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(179deg, #000000,#0a0a0a,#040233);                                                                                    
-    height: 180vh;
+    height: 100%;
     padding: 0 90px;
+    position: relative;
 }
 
 .skills-title{
     position: absolute;
-    top: 95%;
+    top: -2%;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -126,10 +128,16 @@ body{
     border: 0;
     padding: 8px;
     background-color: #ff7300;
-    color: #000000;
-    font-size: 26px;
+    
     border-radius: 50%;
 }
+
+.card-skils button a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 26px;
+}
+
 /* Sessão do Radmap*/
 
 .roadmap-carees{
@@ -223,6 +231,9 @@ body{
 .cards-carees{
     color: #FFFFFF;
     margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os labels quebrem para a próxima linha */
+    gap: 10px;
 }
 
 .line{
@@ -232,8 +243,9 @@ body{
 .card-carees{
     width: 250px;
     background-color: rgba(69, 71, 75, 0.5);
-    padding: 20px;
+    padding: 13px 20px 18px 20px;
     border-radius: 10px;
+    height: 100%;
 }
 
 .card-carees h3{
@@ -262,7 +274,7 @@ footer {
     text-align: center; 
     padding: 0; 
     width: 100%; 
-    position: fixed;
+    position: absolute;
     bottom: 0;
     font-size: 1rem;
 }
