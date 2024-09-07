@@ -66,7 +66,7 @@ body{
 .section-skills{
     background: -webkit-linear-gradient(179deg, #000000,#0a0a0a,#040233);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(179deg, #000000,#0a0a0a,#040233);                                                                                    
     height: 100%;
-    padding: 0 90px;
+    padding: 0 90px 60px;
     position: relative;
 }
 
@@ -241,7 +241,7 @@ body{
 }
 
 .card-carees{
-    width: 250px;
+    max-width: 350px;
     background-color: rgba(69, 71, 75, 0.5);
     padding: 13px 20px 18px 20px;
     border-radius: 10px;
@@ -249,11 +249,21 @@ body{
 }
 
 .card-carees h3{
+    color: #5900ff;
     font-size: 25px;
     font-weight: 500;
 }
 
+.card-carees h4{
+    color: #5900ff;
+}
+
+.card-carees span{
+    color: #2bff00;
+}
+
 .card-carees button{
+    margin-top: 20px;
     width: 100%;
     padding: 14px 20px;
     border-radius: 10px;
@@ -277,4 +287,57 @@ footer {
     position: absolute;
     bottom: 0;
     font-size: 1rem;
+}
+
+@media (max-width: 820px) {
+    .section-main{
+        background-image: url(assets/imagens/bannerMobile.jpg);
+    }
+
+    .title-main h1{
+        margin: 0 40px;
+    }
+
+    .title-main p{
+        margin: 0 40px;
+    }
+
+    .roadmap-carees{
+        margin: 40px 10px;
+    }
+    .section-skills{
+        padding: 0 50px 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-skils{
+        width: 100%;
+    }
+
+    .roadmap-carees{
+        margin: 40px 6px;
+    }
+}
+
+@media (max-width: 500px) {
+    .shortcut-tab{
+        display: none;
+    }
+
+    .roadmap-carees{
+        margin: 40px 2px;
+    }
+
+    .card-carees{
+        width: 100%;
+    }
+
+    .container-search{
+        flex-direction: column;
+    }
+
+    .container-search input{
+        max-width: 200px;
+    }
 }
